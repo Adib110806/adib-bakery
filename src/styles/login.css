@@ -1,0 +1,119 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  background-size: cover;
+  background-position: center;
+}
+
+.login-card {
+  background: rgba(255, 248, 238, 0.97);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-strong);
+  width: 100%;
+  max-width: 420px;
+  padding: var(--space-6) var(--space-5);
+  animation: login-pop 0.4s ease;
+}
+
+@keyframes login-pop {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.login-card__brand {
+  text-align: center;
+  margin-bottom: var(--space-5);
+}
+
+.login-card__brand img {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-2);
+}
+
+.login-card__brand h1 {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+.login-card__brand p {
+  font-size: 0.88rem;
+  color: var(--color-brown-2);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.login-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-brown-dark);
+}
+
+.login-form__input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid var(--color-cream-2);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  transition: border-color 0.2s ease;
+  background: var(--color-white);
+}
+
+.login-form__input-wrap:focus-within {
+  border-color: var(--color-orange);
+}
+
+.login-form__input-wrap svg {
+  color: var(--color-orange-dark);
+  flex-shrink: 0;
+}
+
+.login-form__input-wrap input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 0.95rem;
+  background: transparent;
+}
+
+.login-form__toggle {
+  color: var(--color-brown-2);
+  display: flex;
+}
+
+.login-form__error {
+  background: #fbe4de;
+  color: #a3341e;
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+}
+
+.login-form__submit {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 4px;
+}
+
+.login-form__hint {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--color-brown-2);
+}

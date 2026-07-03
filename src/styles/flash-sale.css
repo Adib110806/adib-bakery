@@ -1,0 +1,117 @@
+.flash-sale {
+  background: var(--color-brown-dark);
+  color: var(--color-cream);
+}
+
+.flash-sale .section-subtitle {
+  color: var(--color-cream-2);
+}
+
+.flash-sale__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  text-align: left;
+}
+
+.flash-sale__eyebrow {
+  color: var(--color-orange);
+}
+
+.flash-sale__timer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flash-sale__timer-box {
+  background: rgba(255, 248, 238, 0.1);
+  border: 1px solid rgba(255, 248, 238, 0.2);
+  border-radius: var(--radius-md);
+  padding: 0.5rem 0.9rem;
+  text-align: center;
+  min-width: 58px;
+}
+
+.flash-sale__timer-box span {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+}
+
+.flash-sale__timer-box small {
+  font-size: 0.65rem;
+  color: var(--color-cream-2);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.flash-sale__colon {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-orange);
+}
+
+.flash-sale__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-4);
+}
+
+.flash-card {
+  background: var(--color-cream);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  color: var(--color-brown-dark);
+  transition: transform 0.3s ease;
+}
+
+.flash-card:hover {
+  transform: translateY(-6px);
+}
+
+.flash-card__image {
+  position: relative;
+  aspect-ratio: 4 / 3;
+}
+
+.flash-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flash-card__badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.flash-card__body {
+  padding: var(--space-3) var(--space-4) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.flash-card__body h3 {
+  font-size: 1rem;
+}
+
+.flash-card .btn {
+  margin-top: 6px;
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  .flash-sale__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="96" fill="#4A2C1D" stroke="#C98A3E" stroke-width="6"/>
+  <ellipse cx="100" cy="112" rx="58" ry="38" fill="#FFF8EE"/>
+  <ellipse cx="100" cy="96" rx="48" ry="30" fill="#E8873A"/>
+  <text x="50%" y="172" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#FFF8EE" font-weight="bold">Adib</text>
+</svg>

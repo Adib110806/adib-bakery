@@ -1,0 +1,39 @@
+:root {
+  /* Palet Adib Bakery */
+  --color-cream: #fff8ee;
+  --color-cream-2: #f5e6cc;
+  --color-brown-dark: #3a2417;
+  --color-brown: #4a2c1d;
+  --color-brown-2: #6f4326;
+  --color-orange: #e8873a;
+  --color-orange-dark: #c96a24;
+  --color-gold: #c98a3e;
+  --color-white: #ffffff;
+  --color-red: #c2452d;
+  --color-green: #4c8b53;
+
+  /* Tipografi */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Poppins', 'Segoe UI', sans-serif;
+
+  /* Spacing */
+  --space-1: 0.4rem;
+  --space-2: 0.8rem;
+  --space-3: 1.2rem;
+  --space-4: 1.6rem;
+  --space-5: 2.4rem;
+  --space-6: 3.2rem;
+  --space-7: 4.8rem;
+  --space-8: 6.4rem;
+
+  /* Radius & Shadow */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+  --shadow-soft: 0 10px 30px rgba(74, 44, 29, 0.12);
+  --shadow-strong: 0 20px 45px rgba(74, 44, 29, 0.22);
+
+  --container-width: 1200px;
+  --navbar-height: 78px;
+}

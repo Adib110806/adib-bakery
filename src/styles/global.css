@@ -1,0 +1,219 @@
+@import './variables.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-cream);
+  color: var(--color-brown-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--color-brown-dark);
+  line-height: 1.15;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-orange);
+  outline-offset: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.section {
+  padding: var(--space-8) 0;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto var(--space-6);
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-orange-dark);
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+.section-subtitle {
+  color: var(--color-brown-2);
+  font-size: 1.02rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 0.85rem 1.8rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background: var(--color-orange);
+  color: var(--color-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-primary:hover {
+  background: var(--color-orange-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-cream);
+  border: 2px solid var(--color-cream);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 248, 238, 0.15);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--color-brown);
+  color: var(--color-cream);
+}
+
+.btn-secondary:hover {
+  background: var(--color-brown-dark);
+  transform: translateY(-2px);
+}
+
+/* Scallop divider terinspirasi dari tepian roti - elemen signature Adib Bakery */
+.scallop-divider {
+  height: 26px;
+  width: 100%;
+  background-image: radial-gradient(circle at 10px 0, transparent 12px, var(--color-cream) 13px);
+  background-size: 24px 26px;
+  background-repeat: repeat-x;
+}
+
+.scallop-divider--flip {
+  transform: rotate(180deg);
+}
+
+/* Animasi fade-up untuk kartu saat muncul di layar */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-discount {
+  background: var(--color-red);
+  color: var(--color-white);
+}
+
+.badge-rating {
+  background: var(--color-cream-2);
+  color: var(--color-brown-dark);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--space-6) 0;
+  }
+}
